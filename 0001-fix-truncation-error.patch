@@ -1,8 +1,22 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b05d6f (Patch)
 From 35799a3d0b76a85c0b6b6269e02c4418de423e56 Mon Sep 17 00:00:00 2001
 =======
 From 4ad40a3b4572deee4efc716e7bd6e6e4fda46dcf Mon Sep 17 00:00:00 2001
 >>>>>>> 35799a3 (fix truncation error)
+<<<<<<< HEAD
+=======
+=======
+From 35799a3d0b76a85c0b6b6269e02c4418de423e56 Mon Sep 17 00:00:00 2001
+>>>>>>> 178ef1a (formatting: use tabs instead of spaces)
+=======
+From 7aa541cd8c602ac5cb86745c66ab94bd936c0cdf Mon Sep 17 00:00:00 2001
+>>>>>>> d3e3835 (Patch)
+>>>>>>> 9b05d6f (Patch)
 From: Sergii Piatakov <sergii.piatakov@globallogic.com>
 Date: Thu, 15 Nov 2018 15:28:04 +0200
 Subject: [PATCH] fix truncation error
@@ -14,32 +28,55 @@ Test: Add (4.9, 4.9) should return 10.
 Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 178ef1a (formatting: use tabs instead of spaces)
+>>>>>>> 9b05d6f (Patch)
  0001-fix-truncation-error.patch               | 30 +++++++++++
  ...ormatting-use-tabs-instead-of-spaces.patch | 48 ++++++++++++++++++
  0001-improve-calculation-accuracy.patch       | 50 +++++++++++++++++++
  calculator.cpp                                |  4 ++
  4 files changed, 132 insertions(+)
  create mode 100644 0001-fix-truncation-error.patch
+=======
+ 0001-fix-truncation-error.patch               |  20 ++
+ ...ormatting-use-tabs-instead-of-spaces.patch | 252 ++++++++++++++++++
+ 0001-improve-calculation-accuracy.patch       |  50 ++++
+ calculator.cpp                                |   5 +
+ 4 files changed, 327 insertions(+)
+>>>>>>> d3e3835 (Patch)
  create mode 100644 0001-formatting-use-tabs-instead-of-spaces.patch
  create mode 100644 0001-improve-calculation-accuracy.patch
 
 diff --git a/0001-fix-truncation-error.patch b/0001-fix-truncation-error.patch
-new file mode 100644
-index 0000000..a60c4c4
---- /dev/null
+index 150876e..fb17ad9 100644
+--- a/0001-fix-truncation-error.patch
 +++ b/0001-fix-truncation-error.patch
-@@ -0,0 +1,30 @@
+@@ -1,4 +1,8 @@
++<<<<<<< HEAD
+ From 35799a3d0b76a85c0b6b6269e02c4418de423e56 Mon Sep 17 00:00:00 2001
++=======
 +From 4ad40a3b4572deee4efc716e7bd6e6e4fda46dcf Mon Sep 17 00:00:00 2001
-+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
-+Date: Thu, 15 Nov 2018 15:28:04 +0200
-+Subject: [PATCH] fix truncation error
-+
-+To convert float to integer the truncation is performed, but the
-+rounding is expected.
-+
-+Test: Add (4.9, 4.9) should return 10.
-+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
-+---
++>>>>>>> 35799a3 (fix truncation error)
+ From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+ Date: Thu, 15 Nov 2018 15:28:04 +0200
+ Subject: [PATCH] fix truncation error
+@@ -9,6 +13,7 @@ rounding is expected.
+ Test: Add (4.9, 4.9) should return 10.
+ Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+ ---
++<<<<<<< HEAD
+  0001-fix-truncation-error.patch               | 30 +++++++++++
+  ...ormatting-use-tabs-instead-of-spaces.patch | 48 ++++++++++++++++++
+  0001-improve-calculation-accuracy.patch       | 50 +++++++++++++++++++
+@@ -177,6 +182,21 @@ index b91afea..34f8d05 100644
+ +=======
+ +	return a + b + 0.5;
+ +>>>>>>> 4ad40a3 (fix truncation error)
++=======
 + calculator.cpp | 2 +-
 + 1 file changed, 1 insertion(+), 1 deletion(-)
 +
@@ -53,39 +90,241 @@ index 0000000..a60c4c4
 + {
 +-	return a + b;
 ++	return a + b + 0.5;
-+ }
-+ 
-+ int Calculator::Sub (double a, double b)
-+-- 
-+2.34.1
-+
++>>>>>>> 35799a3 (fix truncation error)
+  }
+  
+  int Calculator::Sub (double a, double b)
 diff --git a/0001-formatting-use-tabs-instead-of-spaces.patch b/0001-formatting-use-tabs-instead-of-spaces.patch
 new file mode 100644
-index 0000000..0e9bdd8
+index 0000000..5a2e3e4
 --- /dev/null
 +++ b/0001-formatting-use-tabs-instead-of-spaces.patch
-@@ -0,0 +1,48 @@
-+From cbcb06d48af5cb1e0f5673aa7672ca85ea3e2d10 Mon Sep 17 00:00:00 2001
+@@ -0,0 +1,252 @@
++From 178ef1a609a63975ceed830eb6aa6755aa6cf4a8 Mon Sep 17 00:00:00 2001
 +From: Sergii Piatakov <sergii.piatakov@globallogic.com>
 +Date: Thu, 15 Nov 2018 15:26:35 +0200
-+Subject: [PATCH 1/2] formatting: use tabs instead of spaces
++Subject: [PATCH] formatting: use tabs instead of spaces
 +
 +Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
 +---
-+ calculator.cpp | 4 ++--
-+ calculator.h   | 6 +++---
-+ 2 files changed, 5 insertions(+), 5 deletions(-)
++ 0001-fix-truncation-error.patch | 185 ++++++++++++++++++++++++++++++++
++ calculator.cpp                  |  14 ++-
++ calculator.h                    |   6 +-
++ 3 files changed, 201 insertions(+), 4 deletions(-)
++ create mode 100644 0001-fix-truncation-error.patch
 +
++diff --git a/0001-fix-truncation-error.patch b/0001-fix-truncation-error.patch
++new file mode 100644
++index 0000000..150876e
++--- /dev/null
+++++ b/0001-fix-truncation-error.patch
++@@ -0,0 +1,185 @@
+++From 35799a3d0b76a85c0b6b6269e02c4418de423e56 Mon Sep 17 00:00:00 2001
+++From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+++Date: Thu, 15 Nov 2018 15:28:04 +0200
+++Subject: [PATCH] fix truncation error
+++
+++To convert float to integer the truncation is performed, but the
+++rounding is expected.
+++
+++Test: Add (4.9, 4.9) should return 10.
+++Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+++---
+++ 0001-fix-truncation-error.patch               | 30 +++++++++++
+++ ...ormatting-use-tabs-instead-of-spaces.patch | 48 ++++++++++++++++++
+++ 0001-improve-calculation-accuracy.patch       | 50 +++++++++++++++++++
+++ calculator.cpp                                |  4 ++
+++ 4 files changed, 132 insertions(+)
+++ create mode 100644 0001-fix-truncation-error.patch
+++ create mode 100644 0001-formatting-use-tabs-instead-of-spaces.patch
+++ create mode 100644 0001-improve-calculation-accuracy.patch
+++
+++diff --git a/0001-fix-truncation-error.patch b/0001-fix-truncation-error.patch
+++new file mode 100644
+++index 0000000..a60c4c4
+++--- /dev/null
++++++ b/0001-fix-truncation-error.patch
+++@@ -0,0 +1,30 @@
++++From 4ad40a3b4572deee4efc716e7bd6e6e4fda46dcf Mon Sep 17 00:00:00 2001
++++From: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++Date: Thu, 15 Nov 2018 15:28:04 +0200
++++Subject: [PATCH] fix truncation error
++++
++++To convert float to integer the truncation is performed, but the
++++rounding is expected.
++++
++++Test: Add (4.9, 4.9) should return 10.
++++Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++---
++++ calculator.cpp | 2 +-
++++ 1 file changed, 1 insertion(+), 1 deletion(-)
++++
++++diff --git a/calculator.cpp b/calculator.cpp
++++index f323e14..d10f529 100644
++++--- a/calculator.cpp
+++++++ b/calculator.cpp
++++@@ -2,7 +2,7 @@
++++ 
++++ int Calculator::Add (double a, double b)
++++ {
++++-	return a + b;
+++++	return a + b + 0.5;
++++ }
++++ 
++++ int Calculator::Sub (double a, double b)
++++-- 
++++2.34.1
++++
+++diff --git a/0001-formatting-use-tabs-instead-of-spaces.patch b/0001-formatting-use-tabs-instead-of-spaces.patch
+++new file mode 100644
+++index 0000000..0e9bdd8
+++--- /dev/null
++++++ b/0001-formatting-use-tabs-instead-of-spaces.patch
+++@@ -0,0 +1,48 @@
++++From cbcb06d48af5cb1e0f5673aa7672ca85ea3e2d10 Mon Sep 17 00:00:00 2001
++++From: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++Date: Thu, 15 Nov 2018 15:26:35 +0200
++++Subject: [PATCH 1/2] formatting: use tabs instead of spaces
++++
++++Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++---
++++ calculator.cpp | 4 ++--
++++ calculator.h   | 6 +++---
++++ 2 files changed, 5 insertions(+), 5 deletions(-)
++++
++++diff --git a/calculator.cpp b/calculator.cpp
++++index b91afea..f323e14 100644
++++--- a/calculator.cpp
+++++++ b/calculator.cpp
++++@@ -2,10 +2,10 @@
++++ 
++++ int Calculator::Add (double a, double b)
++++ {
++++-    return a + b;
+++++	return a + b;
++++ }
++++ 
++++ int Calculator::Sub (double a, double b)
++++ {
++++-    return Add (a, -b);
+++++	return Add (a, -b);
++++ }
++++diff --git a/calculator.h b/calculator.h
++++index 3740907..d59d596 100644
++++--- a/calculator.h
+++++++ b/calculator.h
++++@@ -3,9 +3,9 @@
++++ 
++++ class Calculator
++++ {
++++-    public:
++++-        int Add (double, double);
++++-        int Sub (double, double);
+++++	public:
+++++		int Add (double, double);
+++++		int Sub (double, double);
++++ };
++++ 
++++ #endif//CALCULATOR_H
++++-- 
++++2.34.1
++++
+++diff --git a/0001-improve-calculation-accuracy.patch b/0001-improve-calculation-accuracy.patch
+++new file mode 100644
+++index 0000000..db648c6
+++--- /dev/null
++++++ b/0001-improve-calculation-accuracy.patch
+++@@ -0,0 +1,50 @@
++++From 669f6321a41da2337d975872e9294b8b91139010 Mon Sep 17 00:00:00 2001
++++From: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++Date: Thu, 15 Nov 2018 15:21:34 +0200
++++Subject: [PATCH] improve calculation accuracy
++++
++++Allow using float point arguments to avoid truncation.
++++
++++Test: Add (4.9, 4.9) should return 10.
++++Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
++++---
++++ calculator.cpp | 4 ++--
++++ calculator.h   | 4 ++--
++++ 2 files changed, 4 insertions(+), 4 deletions(-)
++++
++++diff --git a/calculator.cpp b/calculator.cpp
++++index 3c63184..b91afea 100644
++++--- a/calculator.cpp
+++++++ b/calculator.cpp
++++@@ -1,11 +1,11 @@
++++ #include "calculator.h"
++++ 
++++-int Calculator::Add (int a, int b)
+++++int Calculator::Add (double a, double b)
++++ {
++++     return a + b;
++++ }
++++ 
++++-int Calculator::Sub (int a, int b)
+++++int Calculator::Sub (double a, double b)
++++ {
++++     return Add (a, -b);
++++ }
++++diff --git a/calculator.h b/calculator.h
++++index 84ff414..3740907 100644
++++--- a/calculator.h
+++++++ b/calculator.h
++++@@ -4,8 +4,8 @@
++++ class Calculator
++++ {
++++     public:
++++-        int Add (int, int);
++++-        int Sub (int, int);
+++++        int Add (double, double);
+++++        int Sub (double, double);
++++ };
++++ 
++++ #endif//CALCULATOR_H
++++-- 
++++2.34.1
++++
+++diff --git a/calculator.cpp b/calculator.cpp
+++index b91afea..34f8d05 100644
+++--- a/calculator.cpp
++++++ b/calculator.cpp
+++@@ -2,7 +2,11 @@
+++ 
+++ int Calculator::Add (double a, double b)
+++ {
++++<<<<<<< HEAD
+++     return a + b;
++++=======
++++	return a + b + 0.5;
++++>>>>>>> 4ad40a3 (fix truncation error)
+++ }
+++ 
+++ int Calculator::Sub (double a, double b)
+++-- 
+++2.34.1
+++
 +diff --git a/calculator.cpp b/calculator.cpp
-+index b91afea..f323e14 100644
++index b91afea..7c9cc64 100644
 +--- a/calculator.cpp
 ++++ b/calculator.cpp
-+@@ -2,10 +2,10 @@
++@@ -2,10 +2,22 @@
 + 
 + int Calculator::Add (double a, double b)
 + {
-+-    return a + b;
+++<<<<<<< HEAD
++     return a + b;
+++=======
+++<<<<<<< HEAD
+++<<<<<<< HEAD
+++    return a + b;
+++=======
+++	return a + b + 0.5;
+++>>>>>>> 4ad40a3 (fix truncation error)
+++=======
 ++	return a + b;
+++>>>>>>> cbcb06d (formatting: use tabs instead of spaces)
+++>>>>>>> 11f2b41 (formatting: use tabs instead of spaces)
 + }
 + 
 + int Calculator::Sub (double a, double b)
@@ -170,18 +409,29 @@ index 0000000..db648c6
 +2.34.1
 +
 diff --git a/calculator.cpp b/calculator.cpp
-index b91afea..34f8d05 100644
+index 7c9cc64..df9641d 100644
 --- a/calculator.cpp
 +++ b/calculator.cpp
-@@ -2,7 +2,11 @@
- 
- int Calculator::Add (double a, double b)
- {
-+<<<<<<< HEAD
+@@ -6,6 +6,7 @@ int Calculator::Add (double a, double b)
      return a + b;
+ =======
+ <<<<<<< HEAD
++<<<<<<< HEAD
+ <<<<<<< HEAD
+     return a + b;
+ =======
+@@ -15,6 +16,10 @@ int Calculator::Add (double a, double b)
+ 	return a + b;
+ >>>>>>> cbcb06d (formatting: use tabs instead of spaces)
+ >>>>>>> 11f2b41 (formatting: use tabs instead of spaces)
 +=======
 +	return a + b + 0.5;
 +>>>>>>> 4ad40a3 (fix truncation error)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9b05d6f (Patch)
 =======
  calculator.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -197,6 +447,14 @@ index f323e14..d10f529 100644
 -	return a + b;
 +	return a + b + 0.5;
 >>>>>>> 35799a3 (fix truncation error)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 178ef1a (formatting: use tabs instead of spaces)
+=======
++>>>>>>> 35799a3 (fix truncation error)
+>>>>>>> d3e3835 (Patch)
+>>>>>>> 9b05d6f (Patch)
  }
  
  int Calculator::Sub (double a, double b)
